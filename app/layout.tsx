@@ -1,5 +1,6 @@
 import '@/app/ui/global.css';
- 
+import HeaderAll from './ui/AllHeader';
+
 export default function RootLayout({
   children,
 }: {
@@ -7,7 +8,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+       
+        <HeaderAll />
+        {children}
+      </body>
     </html>
   );
 }
