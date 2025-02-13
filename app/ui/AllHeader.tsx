@@ -1,20 +1,21 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-
+import Image from "next/image";
 export default function HeaderAll() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <header className="bg-white shadow-md dark:bg-gray-900 fixed w-full top-0 left-0 z-50">
     <div className="container mx-auto flex items-center justify-between p-4">
-      <Link href="/">
-        <span className="text-xl font-bold text-gray-800 dark:text-white">
-          MyLogo
-        </span>
+      
+      <Link href="/" className="flex items-center space-x-2">
+          <Image src="/logo.png" alt="Logo" width={10} height={10} className="h-5 w-5" />
+          <span className="text-xl font-bold text-gray-800 dark:text-white">
+            NexaNova
+          </span>
       </Link>
 
-      {/* Desktop Navbar */}
       <nav className="hidden md:flex space-x-6">
         <Link href="#home" className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400">
           Home

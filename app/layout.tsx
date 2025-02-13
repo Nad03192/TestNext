@@ -1,5 +1,6 @@
 import '@/app/ui/global.css';
 import HeaderAll from './ui/AllHeader';
+import FooterAll from './ui/footerall';
 
 export default function RootLayout({
   children,
@@ -12,7 +13,9 @@ export default function RootLayout({
        
         <HeaderAll />
         {children}
+        <FooterAll/>
       </body>
+     
     </html>
   );
 }
