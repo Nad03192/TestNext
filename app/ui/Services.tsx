@@ -2,11 +2,11 @@
 import { useState } from "react";
 import Image from "next/image";
 
-export default function ServicesSection() {
+export default function Section() {
   return (
     <>
      
-     <section id="services" className="h-screen flex items-center justify-center bg-yellow-100 dark:bg-gray-600">
+     <section id="services" className="h-screen flex items-center justify-center  dark:bg-gray-600">
         <div className="container mx-auto text-center px-6">
           <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-6">Our Services</h2>
           <div className="grid md:grid-cols-3 gap-8">

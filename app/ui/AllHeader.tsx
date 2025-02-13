@@ -9,8 +9,8 @@ export default function HeaderAll() {
     <header className="bg-white shadow-md dark:bg-gray-900 fixed w-full top-0 left-0 z-50">
     <div className="container mx-auto flex items-center justify-between p-4">
       
-      <Link href="/" className="flex items-center space-x-2">
-          <Image src="/logo.png" alt="Logo" width={10} height={10} className="h-5 w-5" />
+      <Link href="/" className="flex items-center gap-5">
+          <Image src="/logo.png" alt="Logo" width={25} height={25} />
           <span className="text-xl font-bold text-gray-800 dark:text-white">
             NexaNova
           </span>
