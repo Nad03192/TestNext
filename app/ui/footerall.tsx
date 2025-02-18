@@ -1,31 +1,30 @@
 "use client";
-import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+
 export default function FooterAll() {
   return (
-    <footer className="bg-white shadow-md dark:bg-gray-900 ">
-       <div className="container mx-auto flex items-center justify-between p-4">
-        <div className="grid grid-cols-1 md:grid-cols-3  ">
-         
-          <div className="flex flex-col items-center md:items-start gap-2">
+    <footer className="bg-white shadow-md dark:bg-gray-900 pt-10 pb-10">
+      <div className="container mx-auto p-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           
-          <Link href="/" className="flex items-center gap-5">
-          <Image src="/logo.png" alt="Logo" width={25} height={25} />
-          <span className="text-xl font-bold text-gray-800 dark:text-white">
-            NexaNova
-          </span>
-      </Link>
-     
-      <p className="text-gray-600 mt-2 text-center md:text-left pr-6 md:pr-12">
-  Empowering your business with cutting-edge solutions for a brighter digital future.
-</p>
-
+          
+          <div className="flex flex-col items-start gap-2">
+            <Link href="/" className="flex items-center gap-5">
+              <Image src="/logo.png" alt="Logo" width={25} height={25} />
+              <span className="text-xl font-bold text-gray-800 dark:text-white">
+                NexaNova
+              </span>
+            </Link>
+            <p className="text-gray-600 mt-2 pr-6 md:pr-12 text-left">
+              Empowering your business with cutting-edge solutions for a brighter digital future.
+            </p>
           </div>
 
-          <div className="flex flex-col items-align">
-            <h3 className="text-lg font-semibold">Quick Links</h3>
-            <ul className="mt-3 space-y-2 text-gray-600">
+          
+          <div className="flex flex-col items-start">
+            <h3 className="text-lg font-semibold mb-2">Quick Links</h3>
+            <ul className="space-y-2 text-gray-600">
               <li><a href="#home" className="hover:text-blue-400">Home</a></li>
               <li><a href="#about" className="hover:text-blue-400">About</a></li>
               <li><a href="#services" className="hover:text-blue-400">Services</a></li>
@@ -33,9 +32,10 @@ export default function FooterAll() {
             </ul>
           </div>
 
-          <div className="flex flex-col items-align ">
-            <h3 className="text-lg font-semibold">Follow Us</h3>
-            <div className="flex space-x-4 mt-3">
+        
+          <div className="flex flex-col items-start">
+            <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
+            <div className="flex space-x-4">
               <a href="#" aria-label="Facebook" className="text-gray-600 hover:text-blue-400">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987H7.898v-2.89h2.54V9.413c0-2.507 1.493-3.89 3.777-3.89 1.096 0 2.238.195 2.238.195v2.46h-1.26c-1.244 0-1.63.771-1.63 1.562v1.876h2.773l-.443 2.89h-2.33v6.987C18.343 21.128 22 16.991 22 12z"/>

@@ -61,9 +61,9 @@ export default function ContactSection() {
     
   return (
     <>
-     <section id="contact" className="h-screen flex items-center justify-center bg-blue-400 dark:bg-gray-500">
+     <section id="contact" className=" flex items-center justify-center bg-blue-100 dark:bg-gray-500  pt-20 pb-40 p-4">
         <div className="container mx-auto text-center px-6">
-          <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-6">Contact Us</h2>
+          <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-20">Contact Us</h2>
           <form onSubmit={handleSubmit} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md max-w-lg mx-auto text-left">
   <div className="mb-4">
     <label className="text-m font-semibold text-gray-600 dark:text-white">Name</label>
