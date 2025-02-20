@@ -5,8 +5,8 @@ import Image from "next/image";
 export default function ImageWithText({ imageSrc, imageAlt, title, description }) {
   return (
     <section 
-      id="about" 
-      className="flex flex-col md:flex-row items-center justify-center bg-blue-100 dark:bg-gray-700 px-4 pt-20 pb-40"
+     
+      className="flex flex-col md:flex-row items-center justify-center bg-blue-100 dark:bg-gray-700 px-4  pb-60"
     >
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="text-center md:text-left p-4">
