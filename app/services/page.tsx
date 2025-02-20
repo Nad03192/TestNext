@@ -1,12 +1,12 @@
 "use client";
 import Homepage from "../pages/index"
 import AboutPage from "../pages/about"
-
-export default function Home() {
+import ServicesPage from "../pages/services"
+export default function Services() {
 
   return (
     <main>
-    <AboutPage/>
+    <ServicesPage/>
     </main>
   );
 }

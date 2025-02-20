@@ -1,6 +1,6 @@
 import '@/app/ui/global.css';
 import HeaderAll from '../ui/AllHeader';
-import FooterAll from '../ui/footerall';
+import FooterAll from '../components/footerall';
 
 export default function RootLayout({
   children,

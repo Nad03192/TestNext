@@ -30,6 +30,6 @@
     ".next/types/**/*.ts",
     "app/lib/placeholder-data.ts",
     "scripts/seed.js"
-  ],
+, "app/aboutUs/Home2.js", "app/components/Homepage.js", "app/components/banner.js"  ],
   "exclude": ["node_modules"]
 }

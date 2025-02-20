@@ -4,8 +4,13 @@ import Image from "next/image";
 
 export default function FooterAll() {
   return (
-    
-      <footer className="bg-white shadow-md dark:bg-gray-900 pt-10 pb-10 mt-auto">
+    <div className="flex flex-col h-auto">
+
+      <div className="flex-grow hidden">
+       
+      </div>
+
+      <footer className="bg-white shadow-md dark:bg-gray-900  pb-10 mt-auto">
         <div className="container mx-auto p-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           
@@ -61,6 +66,6 @@ export default function FooterAll() {
           </div>
         </div>
       </footer>
-  
+    </div>
   );
 }
