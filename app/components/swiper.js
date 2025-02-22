@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 
 const SwiperComponent = ({ slides }) => {
   return (
-    <div className="container mx-auto text-center px-6 pb-60">
+    <div className="container mx-auto text-center px-4 pt-40 pb-40">
       <div className="relative flex items-center">
       
         <div className="swiper-button-prev absolute left-[-50px] z-20   text-white  rounded-full cursor-pointer">
@@ -27,19 +27,19 @@ const SwiperComponent = ({ slides }) => {
     768: { slidesPerView: 2 },
     1024: { slidesPerView: 3 },
   }}
-  style={{ padding: '50px', margin: '50px', width: '100%' }}
+  style={{ paddingBottom: '50px', margin: '50px', width: '100%' }}
  
 >
 
           {slides.map((slide, index) => (
             <SwiperSlide key={index}>
-              <div className="relative w-full h-[400px] md:h-[400px] lg:h-[500px] bg-gray-200 rounded-xl shadow-lg">
+              <div className="relative w-full h-[500px] md:h-[400px] lg:h-[500px] bg-gray-200 shadow-lg">
                 <Image
                   src={slide.image}
                   alt={slide.title}
                   fill
                   style={{ objectFit: "cover" }}
-                  className="rounded-t-xl"
+                  
                 />
                 <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white p-4">
                   <h3 className="text-lg font-bold">{slide.title}</h3>

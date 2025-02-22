@@ -26,9 +26,9 @@ export default function ServicesComponent() {
 
   return (
     <>
-      <section className="pt-20 pb-60 flex items-center justify-center dark:bg-gray-600 px-4">
-        <div className="container mx-auto text-center px-4">
-          <h2 className="text-4xl font-bold text-gray-800 dark:text-white mt-40 mb-20">Our Services</h2>
+      <section className=" px-4 flex items-center justify-center dark:bg-gray-600 ">
+        <div className="container mx-auto text-center px-4  pt-40 pb-40">
+          <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-20">Our Services</h2>
           <div className="grid md:grid-cols-3 gap-8">
 
           

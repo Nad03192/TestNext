@@ -16,7 +16,7 @@ export default function ServicesPage() {
     { title: "Is Next.js free?", content: "Yes, Next.js is open-source and free to use!" }
   ];
   const [bannerContent, setBannerContent] = useState({
-    image: "/images/bn2.jpg",
+    image: "/images/services.jpg",
     heading: "Our Services",
     text: "Providing cutting-edge solutions tailored to meet your business needs.",
   });

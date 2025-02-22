@@ -6,7 +6,7 @@ export default function ImageWithText({ imageSrc, imageAlt, title, description }
   return (
     <section 
      
-      className="flex flex-col md:flex-row items-center justify-center bg-blue-100 dark:bg-gray-700 px-4  pb-60"
+      className="flex flex-col md:flex-row items-center justify-center bg-blue-100 dark:bg-gray-700 px-4 pt-40 pb-40"
     >
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="text-center md:text-left p-4">

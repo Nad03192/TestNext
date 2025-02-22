@@ -15,7 +15,7 @@ export default function AboutPage() {
         description: "We are a company dedicated to providing cutting-edge digital solutions to help businesses grow.",
       });
       const [bannerContent, setBannerContent] = useState({
-        image: "/images/bn2.jpg",
+        image: "/images/w2.jpg",
         heading: "About Us",
         text: "We specialize in delivering scalable, secure, and innovative software solutions.",
       });
