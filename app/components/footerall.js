@@ -10,7 +10,7 @@ export default function FooterAll() {
        
       </div>
 
-      <footer className="bg-white shadow-md dark:bg-gray-900  pb-10 mt-auto">
+      <footer className="bg-white shadow-md dark:bg-gray-900 pt-10  pb-10 mt-auto">
         <div className="container mx-auto p-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           

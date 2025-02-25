@@ -9,16 +9,18 @@ const Accordion = ({ items }) => {
   };
 
   return (
-    <div className="w-full ">
+    <div className="w-full  ">
       {items.map((item, index) => (
         <div key={index} className="border-b border-gray-300">
           <button
-            className="flex justify-between w-full p-4 text-lg font-semibold text-left focus:outline-none"
+            className="flex justify-between w-full text-lg font-semibold text-left focus:outline-none px-4 py-3 
+           hover:text-blue-600 dark:hover:text-blue-400 
+           transition-colors duration-300"
             onClick={() => toggleAccordion(index)}
           >
             {item.title}
             <span
-              className={`transform transition-transform ${
+              className={`transform transition-transform pl-3 ${
                 openIndex === index ? "rotate-180" : ""
               }`}
             >
@@ -27,10 +29,10 @@ const Accordion = ({ items }) => {
           </button>
           <div
             className={`overflow-hidden transition-all ${
-              openIndex === index ? "max-h-40 p-4" : "max-h-0"
+              openIndex === index ? "max-h-40 px-4 pb-3" : "max-h-0"
             }`}
           >
-            <p className="text-gray-600">{item.content}</p>
+            <p className="text-gray-600 text-left">{item.content}</p>
           </div>
         </div>
       ))}

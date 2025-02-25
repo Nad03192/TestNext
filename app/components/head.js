@@ -43,17 +43,23 @@ export default function Header({ activeSection }) {
           </Link>
         </nav>
 
-        {/* Mobile Menu Button */}
-        <button className="md:hidden focus:outline-none" onClick={() => setIsOpen(!isOpen)}>
-          <div className="w-6 h-6 flex flex-col justify-between">
-            <span className={`block h-0.5 bg-gray-800 dark:bg-white transition-transform ${isOpen ? "rotate-45 translate-y-1.5" : ""}`}></span>
-            <span className={`block h-0.5 bg-gray-800 dark:bg-white transition-opacity ${isOpen ? "opacity-0" : "opacity-100"}`}></span>
-            <span className={`block h-0.5 bg-gray-800 dark:bg-white transition-transform ${isOpen ? "-rotate-45 -translate-y-1.5" : ""}`}></span>
-          </div>
+        
+        <button
+          className="md:hidden focus:outline-none"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ? (
+            <span className="text-3xl w-full text-gray-800 dark:text-white">&times;</span> 
+          ) : (
+            <div className="w-6 h-6 flex flex-col justify-between">
+              <span className="block h-0.5 bg-gray-800 dark:bg-white"></span>
+              <span className="block h-0.5 bg-gray-800 dark:bg-white"></span>
+              <span className="block h-0.5 bg-gray-800 dark:bg-white"></span>
+            </div>
+          )}
         </button>
       </div>
 
-      {/* Mobile Navbar */}
       <nav className={`md:hidden bg-gray-100 dark:bg-gray-800 transition-all duration-300 ${isOpen ? "block" : "hidden"}`}>
         <div className="flex flex-col items-center space-y-4 py-4">
           <Link 

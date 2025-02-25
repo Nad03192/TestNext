@@ -61,7 +61,7 @@ export default function Form() {
     
   return (
     <>
-     <section  className=" flex items-center justify-center bg-blue-100 dark:bg-gray-500   px-4 pt-40 pb-40">
+     <section  className=" flex items-center justify-center bg-blue-100 dark:bg-gray-500   px-4 pt-20 pb-20">
         <div className="container mx-auto text-center px-6">
           <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-20">Contact Us</h2>
           <form onSubmit={handleSubmit} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md max-w-lg mx-auto text-left">
