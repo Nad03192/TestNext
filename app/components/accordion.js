@@ -1,4 +1,4 @@
-// components/Accordion.js
+
 import { useState } from "react";
 
 const Accordion = ({ items }) => {

@@ -37,7 +37,10 @@ const ServicesComponent = ({ services, ctaText, ctaLink, showFilter, categories,
 
         <div className="grid md:grid-cols-3 gap-8">
         {filteredServices.map((service, index) => (
-            <div key={index} className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg flex flex-col items-center h-78 hover:shadow-xl transition">
+          <div
+          key={index}
+          className="bg-white dark:bg-gray-800 p-4 rounded-lg flex flex-col items-center h-78 hover:shadow-xl transition shadow-[0px_-10px_20px_rgba(0,0,0,0.2)]"
+        >
               <svg className={`w-12 h-12 mb-4 ${service.iconColor}`} fill="currentColor" viewBox="0 0 24 24">
                 <path d={service.iconPath} />
               </svg>
