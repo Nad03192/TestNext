@@ -1,4 +1,3 @@
-
 "use client";
 import { useState } from "react";
 import Banner from "../components/bannerC";
@@ -83,11 +82,12 @@ export default function ServicesPage() {
     digitalMarketing: digitalMarketingServices,
   };
 
-  const [selectedService, setSelectedService] = useState("webDevelopment");
+  const [selectedService, setSelectedService] = useState("");
 
   const handleServiceChange = (event) => {
     setSelectedService(event.target.value);
   };
+
   const categories = [
     { label: "Web Development", value: "webDevelopment" },
     { label: "SEO Optimization", value: "seoOptimization" },
@@ -102,11 +102,9 @@ export default function ServicesPage() {
         heading={bannerContent.heading}
         text={bannerContent.text}
       />
-     
       
-     <ServicesComponent 
-        services={servicesData[selectedService]} 
-        
+      <ServicesComponent 
+        services={servicesData} 
         showFilter={true} 
         categories={categories}
         selectedCategory={selectedService}
