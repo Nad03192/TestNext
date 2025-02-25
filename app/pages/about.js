@@ -44,6 +44,7 @@ export default function AboutPage() {
         imageAlt={aboutContent.imageAlt}
         title={aboutContent.title}
         description={aboutContent.description}
+        showCTA={false} 
       />
     <FooterAll/>
     </div>

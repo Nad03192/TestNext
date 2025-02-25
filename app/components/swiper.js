@@ -19,7 +19,7 @@ const SwiperComponent = ({ slides }) => {
           
       }
     `}</style>
-    <div className="container mx-auto text-center px-4 pt-20 pb-40">
+    <div className="container mx-auto text-center px-4 pt-20 pb-20">
       <div className="relative flex items-center w-full ">
       
         <div className="swiper-button-prev absolute left-[-50px] z-20  md-hidden  text-white  rounded-full cursor-pointer">

@@ -29,10 +29,10 @@ export default function FooterAll() {
             <div className="flex flex-col items-start">
               <h3 className="text-lg font-semibold mb-2">Quick Links</h3>
               <ul className="space-y-2 text-gray-600">
-                <li><a href="#home" className="hover:text-blue-400">Home</a></li>
-                <li><a href="#about" className="hover:text-blue-400">About</a></li>
-                <li><a href="#services" className="hover:text-blue-400">Services</a></li>
-                <li><a href="#contact" className="hover:text-blue-400">Contact</a></li>
+                <li><a href="/home" className="hover:text-blue-400">Home</a></li>
+                <li><a href="/aboutUs" className="hover:text-blue-400">About</a></li>
+                <li><a href="/services" className="hover:text-blue-400">Services</a></li>
+                <li><a href="/contactus" className="hover:text-blue-400">Contact</a></li>
               </ul>
             </div>
 
